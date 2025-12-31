@@ -7,20 +7,30 @@ public class Game {
 
     public void start(){
         System.out.println("Welcome to the Michael RZ Game");
-    
-    while (running) { 
+
+    while (running) {
         System.out.println("Start Game(1)");
         System.out.println("Exit Game(2)");
         int choice = scanner.nextInt();
 
     if (choice == 1) {
-    System.out.println("Start Game(1)");
+        characterSelect();
     }
     else if (choice == 2 ) {
-        running = false;
+        endGame();
     }
     }}
+
+
+    private void characterSelect(){
+        System.out.println("Select a character to play as");
     }
-    
+    private void endGame(){
+        System.out.println("Game closed.");
+        running = false;
+    }
+
+    }
+
 
 
