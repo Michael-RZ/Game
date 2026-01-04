@@ -6,31 +6,50 @@ public class Game {
     private Scanner scanner = new Scanner(System.in);
 
     public void start(){
-        System.out.println("Welcome to the Michael RZ Game");
+        System.out.println("");
+        System.out.println("Welcome to Michael's Turned Based Java Game!");
+        System.out.println("");
+        System.out.println("Please select an option with based off the number provided.");
+        System.out.println("");
+        System.out.println("");
 
     while (running) {
-        System.out.println("Start Game(1)");
-        System.out.println("Exit Game(2)");
+        System.out.println("(1) Start Game");
+        System.out.println("(2) Exit Game");
         int choice = scanner.nextInt();
 
+
     if (choice == 1) {
-        characterSelect();
+        System.out.println("Please select the game mode based off the number provided.");
+        System.out.println("");
+        System.out.println("(1) 1v1");
+        System.out.println("(2) 2v2");
+        System.out.println("(3) 3v3");
+
+        int gameModeChoice = scanner.nextInt();
+        System.out.println("Choose " + gameModeChoice +  " characters");
+        Characters.characterOptions();
+
+        int characterChoice = scanner.nextInt();
+
+        Characters.characterDescription(characterChoice);
+        break;
     }
     else if (choice == 2 ) {
         endGame();
     }
-    }}
 
 
-    private void characterSelect(){
-        System.out.println("Select a character to play as");
     }
-    private void endGame(){
+
+
+
+
+
+    }
+  private void endGame(){
         System.out.println("Game closed.");
         running = false;
-    }
-
-    }
-
+    } }
 
 
