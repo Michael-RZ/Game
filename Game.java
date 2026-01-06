@@ -20,14 +20,15 @@ public class Game {
 
 
     if (choice == 1) {
-        System.out.println("Please select the game mode based off the number provided.");
+        System.out.println("Please select the game mode based off the number provided."); //Maybe turn these statements into a method in another class???
         System.out.println("");
         System.out.println("(1) 1v1");
         System.out.println("(2) 2v2");
         System.out.println("(3) 3v3");
 
         int gameModeChoice = scanner.nextInt();
-        System.out.println("Choose " + gameModeChoice +  " characters");
+        System.out.println("Choose " + gameModeChoice +  " characters"); //FIXME:
+
         Characters.characterOptions();
 
         int characterChoice = scanner.nextInt();

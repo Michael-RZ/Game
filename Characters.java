@@ -3,7 +3,7 @@ public class Characters {
     public static void characterOptions() {
         String[] characters = {"(1) Knight","(2) Mage","(3) Rogue"};
 
-
+        
 
 
 
@@ -35,6 +35,17 @@ public class Characters {
 
     }
 
+    public static void selectCharacters(int x){
+
+        int numberOfPicks = x;
+        String[] selectedCharacters = {};
+
+        while(numberOfPicks != 0) {
+        characterOptions();
+        numberOfPicks -=1;
+        }
+
+    }
 
 
 }
