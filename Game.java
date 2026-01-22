@@ -16,27 +16,17 @@ public class Game {
     while (running) {
         System.out.println("(1) Start Game");
         System.out.println("(2) Exit Game");
+        int play = scanner.nextInt();
+
+
+    if (play == 1) {
+        Character.playableCharacters();
         int choice = scanner.nextInt();
 
-
-    if (choice == 1) {
-        System.out.println("Please select the game mode based off the number provided."); //Maybe turn these statements into a method in another class???
-        System.out.println("");
-        System.out.println("(1) 1v1");
-        System.out.println("(2) 2v2");
-        System.out.println("(3) 3v3");
-
-        int gameModeChoice = scanner.nextInt();
-        System.out.println("Choose " + gameModeChoice +  " characters"); //FIXME:
-
-        Characters.characterOptions();
-
-        int characterChoice = scanner.nextInt();
-
-        Characters.characterDescription(characterChoice);
-        break;
     }
-    else if (choice == 2 ) {
+
+
+    else if (play == 2 ) {
         endGame();
     }
 
