@@ -4,14 +4,10 @@ public class Game {
 
     private boolean running = true;
     private Scanner scanner = new Scanner(System.in);
+    Gamemenu menu = new Gamemenu();
 
     public void start(){
-        System.out.println("");
-        System.out.println("Welcome to Michael's Turned Based Java Game!");
-        System.out.println("");
-        System.out.println("Please select an option with based off the number provided.");
-        System.out.println("");
-        System.out.println("");
+    menu.selectGameMode();
 
     while (running) {
         System.out.println("(1) Start Game");
