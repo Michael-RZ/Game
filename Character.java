@@ -18,12 +18,6 @@ public class Character {
 
     }
 
-    public static void playableCharacters(){
-        System.out.printf("Please select one playable character from the options below %n %n");
-        System.out.println("(1) Knight");
-        System.out.println("(2) Mage");
-        System.out.println("(3) Archer");
-    }
 
     public int playerHealth(){
         return health;
@@ -52,6 +46,14 @@ public class Character {
         int healthPotion =  randomGenerator.nextInt(101);
         health = health + healthPotion;
         return healthPotion;
+    }
+
+    public void characterInfo(){
+        System.err.println("Character Type: " + name);
+        System.err.println("Character Default Attack Damage : " + attack);
+        System.err.println("Character Health: " + health);
+
+
     }
 
     }
