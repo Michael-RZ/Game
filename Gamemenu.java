@@ -18,8 +18,8 @@ public void selectGameMode(){
 }
 public static void playableCharacters(){
         System.out.printf("Please select one playable character from the options below %n %n");
-        System.out.println("(1) Knight");
-        System.out.println("(2) Mage");
-        System.out.println("(3) Archer");
+        System.out.println("(1) Knight - Attack: 100, Health : 200);");
+        System.out.println("(2) Mage -  Attack: 200, Health : 100 ");
+        System.out.println("(3) Archer -  Attack: 150, Health : 150");
     }
 };
