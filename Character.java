@@ -30,9 +30,9 @@ public class Character {
 
     }
 
-    public void takeDamage(){
+    public void takeDamage(int attack){
 
-
+        health -= attack;
 
  }
 
